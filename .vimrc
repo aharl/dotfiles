@@ -15,20 +15,32 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 " Bundle 'tpope/vim-fugitive'
-" Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 Bundle 'lsdr/monokai'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'jlanzarotta/bufexplorer'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'tpope/vim-surround'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Raimondi/delimitMate'
+" SnipMate -- Boo Yah!
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
+
 " Git plugin not hosted on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
+
 " git repos on your local machine (i.e. when working on your own plugin)
 " Bundle 'file:///Users/gmarik/path/to/plugin'
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -97,3 +109,6 @@ set laststatus=2 " This lets airline show all the time, not just when you have a
 
 " NerdTree Settings
 map <C-n> :NERDTreeToggle<CR>
+
+" Mustache Settings
+let g:mustache_abbreviationsl = 1
