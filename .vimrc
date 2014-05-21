@@ -25,6 +25,8 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Raimondi/delimitMate'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'kien/ctrlp.vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
@@ -78,13 +80,16 @@ set showmode
 " with +wildmenu.  See :help 'wildmenu'
 set wildmenu
 
+" Change the mapleader from \ to ,
+let mapleader=","
+
 " Let's make it easy to edit this file (mnemonic for the key sequence is
 " 'e'dit 'v'imrc)
-nmap <silent> ,ev :e $MYVIMRC<cr>
+nmap <silent> \ev :e $MYVIMRC<cr>
 
 " And to source this file as well (mnemonic for the key sequence is
 " 's'ource 'v'imrc)
-nmap <silent> ,sv :so $MYVIMRC<cr>
+nmap <silent> \sv :so $MYVIMRC<cr>
 
 " Tabstops
 set tabstop=2
@@ -104,11 +109,16 @@ if has("gui_running")
 endif
 
 " Airline Settings
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 set laststatus=2 " This lets airline show all the time, not just when you have a split window
 
 " NerdTree Settings
-map <C-n> :NERDTreeToggle<CR>
+map <leader>nt :NERDTreeToggle<CR>
 
 " Mustache Settings
-let g:mustache_abbreviationsl = 1
+let g:mustache_abbreviationsl=1
+
+" Multi Cursor Setup
+let g:multi_cursor_next_key='\n'
+let g:multi_cursor_prev_key='\p'
+let g:multi_cursor_skip_key='\x'
