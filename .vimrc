@@ -19,6 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " Bundle 'tpope/vim-rails.git'
 Bundle 'lsdr/monokai'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'bling/vim-airline'
 Bundle 'jlanzarotta/bufexplorer'
 Bundle 'mustache/vim-mustache-handlebars'
@@ -79,6 +80,10 @@ set showmode
 " Enable enhanced command-line completion. Presumes you have compiled
 " with +wildmenu.  See :help 'wildmenu'
 set wildmenu
+
+" Indentation
+set autoindent
+set smartindent
 
 " Change the mapleader from \ to ,
 let mapleader=","
