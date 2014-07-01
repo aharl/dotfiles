@@ -18,6 +18,9 @@ Plugin 'gmarik/Vundle.vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 Bundle 'lsdr/monokai'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'bling/vim-airline'
@@ -28,6 +31,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Raimondi/delimitMate'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'mileszs/ack.vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
@@ -35,8 +40,8 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 
 " plugin from http://vim-scripts.org/vim/scripts.html
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 
 " Git plugin not hosted on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -77,6 +82,9 @@ set lazyredraw
 " At least let yourself know what mode you're in
 set showmode
 
+" No swapfiles
+set noswapfile
+
 " Enable enhanced command-line completion. Presumes you have compiled
 " with +wildmenu.  See :help 'wildmenu'
 set wildmenu
@@ -108,7 +116,7 @@ set autoindent
 set number
 set relativenumber
 set background=dark
-colorscheme monokai
+colorscheme neon
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 endif
