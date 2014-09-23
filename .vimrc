@@ -17,10 +17,6 @@ Plugin 'gmarik/Vundle.vim'
 " Bundle 'tpope/vim-fugitive'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
-Bundle 'lsdr/monokai'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'bling/vim-airline'
@@ -29,10 +25,10 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Raimondi/delimitMate'
-Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kien/ctrlp.vim'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'mileszs/ack.vim'
+Plugin 'primedirective/Glacier-Remixes', {'rtp': 'vim/'}
+Plugin 'editorconfig/editorconfig-vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
@@ -71,7 +67,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Turn on that syntax highlighting
-syntax on
+syntax enable
 
 " Why is this not a default
 set hidden
@@ -115,8 +111,9 @@ set autoindent
 " UI Settings
 set number
 set relativenumber
+set lines=65 columns=120
 set background=dark
-colorscheme neon
+colorscheme glacier
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 endif
