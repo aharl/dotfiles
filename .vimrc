@@ -111,7 +111,7 @@ set autoindent
 " UI Settings
 set number
 set relativenumber
-set lines=65 columns=120
+set lines=57 columns=140
 set background=dark
 colorscheme glacier
 if has("gui_running")
@@ -124,6 +124,7 @@ set laststatus=2 " This lets airline show all the time, not just when you have a
 
 " NerdTree Settings
 map <leader>nt :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
 
 " Mustache Settings
 let g:mustache_abbreviationsl=1

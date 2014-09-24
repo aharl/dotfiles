@@ -11,6 +11,8 @@ export PS1="\[\033[33m\]\h:\W \u$\[\033[0m\] "
 
 # Personnal Aliases
 alias la='ls -la'
+alias ..='cd ..'
+alias dev='cd ~/Development'
 
 # Path Settings
 export PATH="/usr/local/bin:$PATH"
