@@ -28,6 +28,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'primedirective/Glacier-Remixes', {'rtp': 'vim/'}
+Plugin 'flazz/vim-colorschemes'
 Plugin 'editorconfig/editorconfig-vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -113,7 +114,7 @@ set number
 set relativenumber
 set lines=57 columns=140
 set background=dark
-colorscheme glacier
+colorscheme molokai
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 endif
