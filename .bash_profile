@@ -51,5 +51,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
+# Git, don't make me work
+if [ -f ~/.dotfiles/scripts/.git-completion.bash ]; then
+  . ~/.dotfiles/scripts/.git-completion.bash
+fi
+
 # Node and NPM variables
 export PATH="$HOME/.node/bin:$PATH"
