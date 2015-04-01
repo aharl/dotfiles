@@ -29,6 +29,7 @@ Bundle 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'primedirective/Glacier-Remixes', {'rtp': 'vim/'}
 Plugin 'flazz/vim-colorschemes'
+Plugin 'atelierbram/vim-colors_atelier-schemes'
 Plugin 'editorconfig/editorconfig-vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -112,9 +113,20 @@ set autoindent
 " UI Settings
 set number
 set relativenumber
-set lines=57 columns=140
+set lines=65 columns=145
+
+" Color Scheme
 set background=dark
-colorscheme molokai
+" or, for the light background mode:
+" set background=light
+colorscheme base16-atelierdune
+" or any of the other schemes:
+" colorscheme base16-atelierforest
+" colorscheme base16-atelierheath
+" colorscheme base16-atelierlakeside
+" colorscheme base16-atelierseaside
+" colorscheme base16-ateliersulpherpool
+
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 endif
