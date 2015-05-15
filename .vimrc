@@ -30,6 +30,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'primedirective/Glacier-Remixes', {'rtp': 'vim/'}
 Plugin 'flazz/vim-colorschemes'
 Plugin 'atelierbram/vim-colors_atelier-schemes'
+Plugin 'trusktr/seti.vim'
+Plugin 'StanAngeloff/php.vim'
 Plugin 'editorconfig/editorconfig-vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -38,8 +40,8 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 
 " plugin from http://vim-scripts.org/vim/scripts.html
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
 
 " Git plugin not hosted on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -119,13 +121,7 @@ set lines=65 columns=145
 set background=dark
 " or, for the light background mode:
 " set background=light
-colorscheme base16-atelierdune
-" or any of the other schemes:
-" colorscheme base16-atelierforest
-" colorscheme base16-atelierheath
-" colorscheme base16-atelierlakeside
-" colorscheme base16-atelierseaside
-" colorscheme base16-ateliersulpherpool
+colorscheme seti
 
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
