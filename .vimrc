@@ -32,6 +32,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'atelierbram/vim-colors_atelier-schemes'
 Plugin 'trusktr/seti.vim'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'editorconfig/editorconfig-vim'
 " SnipMate -- Boo Yah!
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -115,7 +116,9 @@ set autoindent
 " UI Settings
 set number
 set relativenumber
-set lines=65 columns=145
+set lines=50
+set columns=145
+set linespace=1
 
 " Color Scheme
 set background=dark
