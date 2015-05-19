@@ -16,6 +16,7 @@ alias dev='cd ~/Development'
 
 # Path Settings
 export PATH="/usr/local/bin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
 
 # rbenv Settings
 export PATH="$HOME/.rbenv/bin:$PATH"
