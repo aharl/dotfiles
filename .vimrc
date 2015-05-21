@@ -28,6 +28,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'primedirective/Glacier-Remixes', {'rtp': 'vim/'}
+Plugin 'mhallendal/spacedust-theme', {'rtp': 'Vim/'}
 Plugin 'flazz/vim-colorschemes'
 Plugin 'atelierbram/vim-colors_atelier-schemes'
 Plugin 'trusktr/seti.vim'
@@ -118,13 +119,13 @@ set number
 set relativenumber
 set lines=50
 set columns=145
-set linespace=1
+set linespace=2
 
 " Color Scheme
 set background=dark
 " or, for the light background mode:
 " set background=light
-colorscheme seti
+colorscheme Spacedust
 
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
