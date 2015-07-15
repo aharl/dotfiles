@@ -128,7 +128,7 @@ set background=dark
 colorscheme Spacedust
 
 if has("gui_running")
-	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+	set guifont=Inconsolata-g\ for\ Powerline:h13
 endif
 
 " Airline Settings
