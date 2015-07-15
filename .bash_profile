@@ -56,6 +56,9 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 if [ -f ~/.dotfiles/scripts/.git-completion.bash ]; then
   . ~/.dotfiles/scripts/.git-completion.bash
 fi
+if [ -f ~/.dotfiles/scripts/legit.bash ]; then
+  . ~/.dotfiles/scripts/legit.bash
+fi
 
 # Node and NPM variables
 export PATH="$HOME/.node/bin:$PATH"
