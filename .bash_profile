@@ -12,7 +12,7 @@ export LSCOLORS=excxFxFxBxxfxfxBxBxexe
 # Personnal Aliases
 alias la='ls -la'
 alias ..='cd ..'
-alias dev='cd ~/Development'
+alias code='cd ~/Code'
 
 # Path Settings
 export PATH="/usr/local/bin:$PATH"
